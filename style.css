@@ -1,9 +1,6 @@
 body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  max-width: 500px;
+  margin: 24px auto;
   background-color: lightgray;
 }
 
@@ -19,7 +16,6 @@ body {
   width: 100%;
   padding: 20px;
   font-size: 5rem;
-  text-align: left;
   border: none;
   background-color: dimgray;
   color: white;
