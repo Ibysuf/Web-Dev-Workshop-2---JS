@@ -24,11 +24,11 @@ document.addEventListener('keydown', (e) => {
     appendToDisplay(e.key)
   } else if (e.key == '.') {
     appendToDisplay(e.key)
+  } else if (e.key == '*' || e.key == '/' || e.key == '+' || e.key == '-') {
+    appendToDisplay(e.key)
   } else if (e.key == 'Enter') {
     document.activeElement.blur()
     calculate()
-  } else if (e.key == '*' || e.key == '/' || e.key == '+' || e.key == '-') {
-    appendToDisplay(e.key)
   } else if (e.key.toLowerCase() == 'c') {
     clearDisplay()
   }
