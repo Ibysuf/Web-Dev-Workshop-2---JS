@@ -17,3 +17,14 @@ function calculate() {
     display.value = 'Error'
   }
 }
+
+document.addEventListener('keydown', (e) => {
+  const num = Number(e.key)
+  if (num >= 0 && num <= 9) {
+    console.log(e.key)
+    appendToDisplay(e.key)
+  } else if (e.key == 'Enter') {
+    document.activeElement.blur()
+    calculate()
+  }
+})
